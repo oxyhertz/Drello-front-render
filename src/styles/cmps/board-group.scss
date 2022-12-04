@@ -1,0 +1,99 @@
+.group-container {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 132px);
+  width: $group-size;
+  background-color: $clr7;
+  border-radius: $border-rsize;
+  margin-left: $draggable-spacing;
+  padding-bottom: $draggable-spacing;
+  box-shadow: 1px 7px 5px -4px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 785px) {
+    max-height: calc(100vh - 110px);
+  }
+
+  @media (max-width: 600px) {
+    max-height: calc(100vh - 165px);
+  }
+
+  @media (max-width: 400px) {
+    max-height: calc(100vh - 210px);
+  }
+}
+
+.board-container {
+  overflow: hidden;
+}
+
+.board-container > .group-container-scrollable > .smooth-dnd-container > .smooth-dnd-draggable-wrapper:first-of-type {
+  margin-left: 12px;
+}
+
+.group-title {
+  cursor: pointer;
+  padding-top: 3px;
+  margin-left: 4px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  textarea {
+    padding-left: 8px;
+    flex-grow: 1;
+    font-size: 14px;
+    color: darken(#172b4d, 5%);
+  }
+
+  .menu-icon {
+    padding: 6px;
+    margin-right: $draggable-spacing;
+    color: #6b778c;
+    &::before {
+      content: "\e951";
+      font-size: 16px;
+      font-family: trello;
+    }
+
+    &:hover {
+      border-radius: $border-rsize;
+      background-color: #091e4214;
+      color: #172b4d;
+    }
+  }
+}
+
+.smooth-dnd-container.horizontal {
+  display: flex !important;
+}
+
+.smooth-dnd-draggable-wrapper.horizontal {
+  height: fit-content;
+}
+
+.smooth-dnd-container {
+  min-height: 4px !important; // need to change
+}
+
+.smooth-dnd-container.vertical {
+  max-height: calc(100vh - 208px);
+  overflow-y: auto;
+  margin-right: 4px;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    border-radius: $border-rsize;
+    background: $scroll-y-bg-clr;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-rsize;
+    background: $scroll-y-clr;
+  }
+}

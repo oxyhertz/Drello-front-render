@@ -1,0 +1,128 @@
+.user-notification{
+    width: 432px;
+    top: 48px;
+    right: 35px;
+    overflow-y: auto;
+    max-height: calc(100vh - 51px);
+    @media(max-width:485px){
+        width: 100%;
+        right:0;
+    }
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+      }
+    
+      &::-webkit-scrollbar-track-piece {
+        border-radius: $border-rsize;
+        background: $scroll-y-bg-clr;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        border-radius: $border-rsize;
+        background: $scroll-y-clr;
+      }
+
+    .empty-notifications{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        img{
+            width: 107px;
+            height: 133px;
+        }
+        h2{
+            color:$mainClr;
+            font-weight: 600;
+        }
+        p{
+                color:$mainClr;
+                font-weight: 400;
+        }
+    }
+    .activity-actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        span{
+            cursor: pointer;
+            text-decoration: underline;
+            color: #6B778C;
+            &:hover{
+                color: #172B4D;
+            }
+        }
+    }
+    li{
+        margin: 0 -10px;
+        background-color: #e4f7fa;
+        transition: background-color .5s ease-in-out;
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        button{
+            width: 16px;
+            height:16px;
+            border-radius: 50%;
+            padding: 0;
+            border: 1px solid #00aecc;
+            background-color: #00c2e0;
+                top: 16px;
+                left: 22px;
+                position: absolute;
+        }
+        .notification-content{
+            background: #f4f5f7;
+            border-radius: 3px;
+            border: 0;
+            box-shadow: 0 1px 1px rgb(9 45 66 / 25%),
+            0 0 0 1px rgb(9 45 66 / 8%);
+            margin: 0 16px 0 48px;
+            min-height: 32px;
+            padding: 0 0 8px;
+            position: relative;
+            width: 360px;
+            header{
+                background-size: cover;
+                padding: 10px 0 20px;
+                div{
+                    padding: 10px;
+                    width: 100%;
+                    margin: 0 10px;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    text-align: center;
+                }
+            }
+            h4{
+                font-size: 14px;
+                color:$mainClr;
+            }
+            main{
+                padding:0 8px;
+            }
+            .user,.activity{
+                display: flex;
+                align-items: center;
+                gap:15px;
+                margin-bottom: 10px;;
+            }
+            .icon{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 1px solid #DFE1E6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: baseline;
+            }
+
+            
+        }
+    }
+}

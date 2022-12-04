@@ -1,0 +1,157 @@
+.login-wrapper {
+    overflow: hidden;
+    background-color: #f9fafc;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 44px);
+
+    font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-trello {
+            font-size: 50px;
+            color: #02517f;
+        }
+
+        h1 {
+            color: #204255;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            font-size: 40px;
+        }
+    }
+
+    .login-container {
+        background-color: #ffffff;
+        padding: 25px 40px;
+        border-radius: $border-rsize;
+        box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+        max-width: 400px;
+        margin: 20px auto;
+
+        h2 {
+            text-align: center;
+            color: #5e6c84;
+            font-size: 16px;
+            letter-spacing: -0.01em;
+            line-height: 28px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            height: 44px;
+            font-size: 14px;
+            margin: 0 0 1.2em;
+            padding: 0.5em;
+            background-color: #fafbfc;
+            border: 2px solid #dfe1e6;
+            border-radius: $border-rsize;
+            box-sizing: border-box;
+            transition: background-color 0.2s ease-in-out 0s;
+            transition: box-shadow 0.3s ease-in-out 0s;
+
+            &:focus {
+                background-color: #fff;
+                border: unset;
+                outline: none;
+                box-shadow: inset 0 0 0 1.5px #0079bf;
+            }
+        }
+
+        .login-btn {
+            font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans",
+                "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            background-color: #5aac44;
+            width: 100%;
+            color: #fff;
+            padding: 0.6em 1.3em;
+            font-size: 14px;
+            &:hover {
+                background-color: #61bd4f;
+            }
+        }
+
+        .login-option-sep {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 12px;
+            margin: 16px 0;
+            font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans",
+                "Droid Sans", "Helvetica Neue", sans-serif;
+            font-weight: 300;
+            line-height: 1.44em;
+        }
+
+        .login-with-google {
+            box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            width: 100%;
+            height: 39px;
+            padding: 0.6em 1.3em;
+            margin-bottom: 12px;
+            transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+
+            &:hover {
+                background-color: #f9fafc;
+            }
+
+            .google-icon {
+                background: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/8215f6659adc202403198fef903a447e/sign-in-with-google.svg")
+                    0 50% no-repeat;
+                display: inline-block;
+                border-radius: 1px;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+            }
+
+            .btn-txt {
+                font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans",
+                    "Droid Sans", "Helvetica Neue", sans-serif;
+                color: #505f79;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 3px;
+            }
+        }
+
+        hr {
+            height: 1px;
+            border: 0;
+            border-top: 1px solid hsl(0, 0%, 80%);
+            margin-top: 25px;
+            margin-bottom: 14px;
+            font-size: 14px;
+        }
+
+        .change-form-link {
+            text-decoration: none;
+            color: #0052cc;
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.333;
+            margin-bottom: 80px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

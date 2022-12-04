@@ -1,0 +1,66 @@
+.board-list {
+  display: grid;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 185px));
+  grid-auto-rows: 96px;
+  column-gap: 16px;
+  row-gap: 32px;
+  grid-auto-flow: dense;
+
+  & li {
+    cursor: pointer;
+    background-size: cover;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    &:hover{
+      .small-overlay{
+        // display: block;
+         opacity: 0.2;
+        }
+        .empty-star{
+          transform: translateX(0);
+          opacity: 1;
+          transition:  0.3s;
+          
+        }
+      }
+    .small-overlay{
+      position: absolute;
+      inset: 0;
+      background-color: black;
+      opacity: 0.10;
+      z-index: 1;
+      transition: opacity .3s;
+    }
+    h2{
+      z-index: 5;
+      position: relative;
+      font-size: 16px;
+      color: #FFFFFF;
+      font-weight: bold;
+      line-height: 20px;
+      margin: 2px 0 0 0;
+      text-shadow: 0px 0px 2px black;
+      
+    }
+  }
+  & .star {
+    font-size: 12px;
+    color: yellow;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
+    .empty-star{
+      transform: translateX(15px);
+      transition:  0.3s;
+      opacity: 0;
+
+    }
+  }
+}

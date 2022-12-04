@@ -1,0 +1,26 @@
+.members-item {
+  & h3 {
+    margin-top: 28px;
+  }
+  & ul li {
+    &:hover {
+      background-color: rgba(9, 30, 66, 0.0392156862745098);
+    }
+  }
+  & .member {
+    cursor: pointer;
+    height: 39px;
+    line-height: 32px;
+    &.find {
+    }
+  }
+  & .name {
+    margin-inline-start: 11px;
+  }
+  & .username {
+    margin-inline-start: 7px;
+  }
+  input {
+    @include popupInput();
+  }
+}

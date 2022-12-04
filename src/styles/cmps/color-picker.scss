@@ -1,0 +1,43 @@
+.color-picker {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -10px 0 0 0;
+
+  // & .selected{
+  //   @include icon("")
+  // }
+
+  .icon-complete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+  }
+}
+
+.color-picker > div {
+  width: 50px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 10px;
+
+  &:hover {
+    filter: saturate(85%) brightness(85%);
+  }
+}
+
+.color-picker.wide {
+  & > div {
+    width: calc(50% - 5px);
+    cursor: pointer;
+    height: 96px;
+    border-radius: 8px;
+
+    .icon-complete {
+      font-size: 36px;
+    }
+  }
+}

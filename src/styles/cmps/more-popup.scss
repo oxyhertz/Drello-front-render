@@ -1,0 +1,58 @@
+.more-popup {
+    position: absolute;
+    top: 48px;
+    width: 304px;
+    padding: 10px;
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px -4px rgb(9 30 66 / 25%),
+        0 0 0 1px rgb(9 30 66 / 8%);
+    
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            padding:5px 0;
+            &:hover{
+                background-color: $clr7;
+            }
+        }
+    header {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        position: relative;
+
+        span {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+
+    }
+    h4,p {
+        color: #5e6c84;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+
+    svg{
+        color: #5e6c84;
+    }
+   
+}
+.more-btn{
+    
+    display: none !important;
+    @media(max-width:500px){
+        display: flex !important;
+    }
+}

@@ -1,0 +1,111 @@
+.board-header {
+  // margin: 18px 0 10px 12px;
+  flex-wrap: wrap;
+
+  .menu-left-header {
+    flex-wrap: wrap;
+  }
+  .right-btns {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & .btn {
+    @include lightBtn;
+    background-color: #ffffff3d;
+    align-items: flex-start;
+  }
+
+  .board-header-favorite:hover .fa-star {
+    color: $favorite-clr;
+    transform: scale(1.2);
+  }
+  .fa-solid {
+    color: $favorite-clr;
+  }
+
+  > * {
+    color: white;
+    @include board-btn($bg: rgba(240, 248, 255, 0));
+    height: auto;
+    @media (max-width: 785px) {
+      padding: 0;
+      padding-top: 10px;
+    }
+  }
+
+  button {
+    align-items: stretch;
+    gap: 5px;
+  }
+}
+.board-header-title {
+  margin-inline-start: 1rem;
+  margin-bottom: 8px;
+
+  input {
+    font-size: 18px;
+    padding: 6px 1px 6px 12px;
+    &:not(:focus) {
+      color: white;
+    }
+  }
+
+  & .editable:hover:not(:focus) {
+    border-radius: $border-rsize;
+    background-color: #ffffff52;
+  }
+}
+
+.board-header-board-icon::before {
+  @include boardHeader("\e942");
+}
+
+.board-header-invite-icon::before {
+  @include boardHeader("\e902");
+}
+
+.board-header-filter-icon::before {
+  padding-inline-start: 5px;
+  @include boardHeader("\e92d");
+}
+
+.board-header-menu-icon::before {
+  @include boardHeader("\e951");
+}
+
+.board-header-open-icon::before {
+  @include boardHeader("\e923");
+}
+
+.board-header-favorite {
+  @include boardHeader();
+  height: 32px;
+  width: 32px;
+  padding: 8px 10px 0;
+  margin-top: -8px;
+  margin-inline-start: 1rem;
+}
+
+.members-preview {
+  margin-inline-start: 20px;
+  margin-bottom: 8px;
+}
+
+.invite-members-container {
+  margin-inline-start: 8px;
+}
+
+.show-menu {
+  margin-inline-start: 8px;
+  padding: 7px 16px;
+}
+
+@media (max-width: 785px) {
+  .board-header {
+    .right-btns {
+      padding: 0;
+    }
+  }
+}

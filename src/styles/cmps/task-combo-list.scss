@@ -1,0 +1,109 @@
+.task-combo-list {
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.task-combo-list h3 {
+  color: #5e6c84;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 8px 4px 0;
+  text-overflow: ellipsis;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+.task-combo-list .labels span {
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 3px;
+  display: block;
+  float: left;
+  font-weight: 600;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 4px 4px 0;
+  min-width: 39px;
+  padding: 0 12px;
+}
+
+.combo-add-icon {
+  cursor: pointer;
+  left: 0;
+  font-weight: 800;
+  height: 32.5px;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(9, 30, 66, 0.04);
+
+  &.label {
+    border-radius: 3px;
+  }
+
+  &:hover {
+    background-color: #091e4214;
+  }
+
+  &::before {
+    content: "\e901";
+    font-family: Trello;
+    min-width: 32px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.task-combo-list .members .avatar {
+  margin: 0 4px 4px 0;
+  padding: 0 12px;
+  font-family: system-ui;
+  letter-spacing: 0.6px;
+}
+
+.due-date {
+  cursor: pointer;
+  & .title {
+    border-bottom: 4px;
+    background-color: rgba(9, 30, 66, 0.04);
+    min-height: 32px;
+    min-height: 32px;
+    padding: 5px;
+    &:hover {
+      background-color: rgba(9, 30, 66, 0.08);
+    }
+  }
+}
+
+.open-icon {
+  @include icon("\e923");
+  color: $clr4;
+}
+
+.date-checkbox {
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.status {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 4px;
+  border-radius: 2px;
+  margin: auto 0 auto 8px;
+  color: #ffffff;
+  &.completed {
+    background-color: #61bd4f;
+  }
+  &.overdue {
+    background-color: #ec9488;
+  }
+}
+
+.labels .label {
+  flex-wrap: wrap;
+}

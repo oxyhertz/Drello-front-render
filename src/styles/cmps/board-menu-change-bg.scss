@@ -1,0 +1,47 @@
+.change-bg-menu {
+  section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    text-align: center;
+    div {
+    }
+  }
+  .img,
+  .color,
+  .add-bg {
+    cursor: pointer;
+    background-color: #dfe1e6;
+    background-size: cover;
+    border-radius: 8px;
+    height: 96px;
+    margin-bottom: 8px;
+    width: 156px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .img {
+    background-image: url('https://a.trellocdn.com/prgb/dist/images/photos-thumbnail@3x.8f9c1323c9c16601a9a4.jpg');
+  }
+  .color {
+    background-image: url('https://a.trellocdn.com/prgb/dist/images/colors@2x.ec32a2ed8dd8198b8ef0.jpg');
+  }
+  .custom-bg {
+    h2 {
+      font-weight: 500;
+    }
+    margin-top: 25px;
+  }
+  .add-bg {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-plus {
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.members-preview{
+    display: flex;
+    div{
+        margin-left:-3px;
+    }
+
+    .avatar-container{
+        position: relative;
+    }
+
+    .admin-badge{
+        bottom: 0;
+        height: 9px;
+        position: absolute;
+        right: 1px;
+        width: 9px;
+        z-index: 3;
+    }
+    
+}

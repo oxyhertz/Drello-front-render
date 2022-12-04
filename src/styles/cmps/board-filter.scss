@@ -1,0 +1,128 @@
+.board-filter {
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  top: 44px;
+  background-color: #ffffff;
+  width: 384px;
+  padding: 15px 10px 10px 10px;
+  box-shadow: 0 12px 24px -6px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%);
+  transition: all 0.3s;
+  color: #091e42;
+
+  .icon-back{
+    opacity: 0;
+  }
+  label p {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  & > div {
+    margin-bottom: 20px;
+  }
+  h4 {
+    color: #5e6c84;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
+    .icon-cancel {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .icon-time {
+    color: white;
+  }
+
+  .search-inp {
+    input {
+      @include popupInput();
+    }
+
+    p {
+      color: #5e6c84;
+      font-size: 11px;
+      line-height: 14px;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+  }
+  .members {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        .avatar {
+          font-size: 12px;
+        }
+        input {
+          margin-right: 5px;
+        }
+        p {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  span:not(.header-icon) {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $clr7;
+    font-weight: 400;
+  }
+  ul {
+    li {
+      label {
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        cursor: pointer;
+        &:hover {
+          filter: contrast(0.7);
+        }
+      }
+    }
+
+    .labels {
+      .icon-label {
+        font-weight: 400;
+      }
+    }
+    .label {
+      height: 30px;
+      width: 100%;
+      border-radius: 3px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.main-layout {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.home-layout {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .main-layout {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-layout {
+    width: 1020px;
+  }
+}
+
+@media (max-width: 990px) {
+  .home-layout {
+    width: 720px;
+  }
+}
+
+@media (max-width: 765px) {
+  .home-layout {
+    width: 540px;
+  }
+}
+@media (max-width: 540px) {
+  .home-layout {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,78 @@
+.attachments-container{
+    margin-bottom: 45px;
+    .attachment-item{
+        display: flex;
+        gap: 20px;
+        border-radius: 3px;
+        margin: 0 0 8px;
+        cursor: pointer;
+        
+        .image-container{
+            
+            background-color: #091e420a;
+            border-radius: 3px;
+        }
+        img{
+            border-radius: 3px;
+            width: 112px;
+            height: 80px;
+            object-position: center;
+            object-fit: cover;
+        }
+        .attachment-action{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .main-actions{
+            margin-bottom: 22px;
+        }
+        &:hover{
+            background-color: #eaecf0;
+        }
+    }
+
+
+
+}
+
+.attachment-item{
+
+    button{
+        display: inline-block;
+        width: auto !important;
+    }
+    input[type="text"]{
+        width: 100%;
+        -webkit-appearance: none;
+        background-color: #fafbfc;
+        border: none;
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 2px #dfe1e6;
+        box-sizing: border-box;
+        display: block;
+        line-height: 20px;
+        margin-bottom: 12px;
+        outline: none;
+        padding: 8px 12px;
+        transition-duration: 85ms;
+        transition-property: background-color,border-color,box-shadow;
+        transition-timing-function: ease;
+        &:focus{
+            background-color: #fff;
+            box-shadow: inset 0 0 0 2px #0079bf;
+        }
+    }
+
+    .attach-link{
+        border-top: 1px solid rgba(9, 30, 66, 0.13);
+        padding-top: 23px;
+    }
+}
+.drag-container{
+    height: 195px;
+    cursor: pointer;
+    border: 1px dashed #ebecf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

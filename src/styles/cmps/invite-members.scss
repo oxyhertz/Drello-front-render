@@ -1,0 +1,41 @@
+.invite-members-modal {
+  @include modal-act($top: 21px);
+  color: $mainClr;
+
+  header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    span {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+
+  input {
+    @include popupInput();
+    margin-bottom: 10px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $clr7;
+    }
+  }
+}
+
+.invite-members-container {
+  position: relative;
+}

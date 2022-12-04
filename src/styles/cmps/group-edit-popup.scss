@@ -1,0 +1,35 @@
+.group-edit-popup {
+    position: absolute;
+    top: 40px;
+    left: 230px;
+    cursor: auto;
+    main p {
+        margin: 0 -10px;
+        padding: 6px 12px;
+        font-weight: 400;
+        color: #172b4d;
+        font-size: 15px;
+        cursor: pointer;
+
+        &:hover {
+            color: #091e42;
+            background-color: #091e420a;
+        }
+
+        &:active {
+            background-color: #e4f0f6;
+        }
+    }
+
+    .icon-cancel {
+        line-height: 20px;
+        width: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #6b778c;
+
+        &:hover {
+            color: #172b4d;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.activities{
+    border-top: 1px solid rgba(9, 30, 66, 0.13);
+    padding-top:25px ;
+    .logo{
+        display: flex;
+        align-items: center;
+        gap:15px;
+        margin-left: 7px;
+        border-radius: 3px;
+        line-height: 20px;
+        padding:5px 0;
+        position: relative;
+        text-decoration: none;
+        margin-bottom: 10px;
+        p{
+            font-weight: bold;
+        }
+        &:hover{
+            background-color: #e2e4e9;
+        }
+    }
+    .activity-content{
+        
+    }
+    .member-name{
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    .activity{
+        margin-bottom: 15px;
+    }
+
+}

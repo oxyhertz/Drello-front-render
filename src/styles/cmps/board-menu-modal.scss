@@ -1,0 +1,104 @@
+.board-menu-modal {
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  top: 44px;
+  height: calc(100vh - 44px);
+  background-color: #f4f5f7;
+  padding: 15px 10px 10px 10px;
+  width: 340px;
+  transition: all 0.3s;
+  color: #091e42;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  
+  &::-webkit-scrollbar-track-piece {
+    border-radius: $border-rsize;
+    background: $scroll-y-bg-clr;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-rsize;
+    background: $scroll-y-clr;
+  }
+
+  header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    align-items: center;
+    .icon-cancel {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .about-board {
+    & > div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      gap: 15px;
+      padding: 6px 0 6px 12px;
+      span {
+        font-size: 20px;
+      }
+      &:hover {
+        background-color: #091e4214;
+      }
+
+      .bg-icon {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        border-radius: 3px;
+      }
+    }
+  }
+  h3 {
+    flex-grow: 1;
+    text-align: center;
+    color: $mainClr;
+  }
+
+  .icon-back {
+    cursor: pointer;
+  }
+}
+
+.close-board-modal {
+  @include icon("", $clr: $clr4);
+}
+
+.background-photos {
+  .popup-inp {
+    margin-bottom: 15px;
+  }
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > div {
+      width: calc(50% - 5px);
+      cursor: pointer;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 96px;
+        border-radius: 8px;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

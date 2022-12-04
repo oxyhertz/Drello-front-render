@@ -1,0 +1,27 @@
+.favorite-boards-popup{
+    header {}
+    
+    .board-bg {
+        width: 40px;
+        height: 32px;
+        border-radius: 3px;
+        background-size: cover;
+    }
+    
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        margin-bottom: 5px;
+        border-radius: 3px;
+    
+        &:hover {
+            background-color: $clr7;
+        }
+    
+        p {
+            font-weight: 600;
+        }
+    }
+}

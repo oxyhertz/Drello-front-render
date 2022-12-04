@@ -1,0 +1,16 @@
+.checklist-popup {
+    & .save {
+        padding: 6px 24px;
+        width: fit-content !important;
+    }
+    label {
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    input {
+        @include popupInput();
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,19 @@
+.search-photo-container {
+  input {
+    width: 100%;
+    background-color: #fafbfc;
+    box-shadow: inset 0 0 0 2px #dfe1e6;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .suggested-searches {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    button {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.quick-edit {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px;
+  @media(max-width:475px){
+
+  }
+  .btn {
+    cursor: pointer;
+    background: #0009;
+    border-radius: 3px;
+    clear: both;
+    color: #e6e6e6;
+    display: block;
+    float: left;
+    margin: 0 0 4px 8px;
+    padding: 6px 12px 6px 8px;
+    text-decoration: none;
+    transition: transform 85ms ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    span {
+      color: white;
+    }
+    &:hover {
+      background: #000c;
+      color: #fff;
+      transform: translateX(5px);
+    }
+  }
+}
+
+// .task-preview-container {
+//   display: flex;
+//   position: relative;
+// }
